@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_10">
+
+
+        <include layout="@layout/toolbar_transparent" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monotype_corsiva"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_44" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textview_style_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:text="@string/enter_pin"
+                        android:textColor="@color/color_dark_gray"
+                        android:textSize="@dimen/sp_22" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:fontFamily="@font/muli_bold"
+                        android:paddingStart="@dimen/dp_16"
+                        android:paddingEnd="@dimen/dp_16"
+                        android:text="@string/pin_msg"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/sp_14" />
+
+
+                    <com.app.baseapp.views.pinview.PinView
+                        android:id="@+id/pin_view"
+                        style="@style/PinWidget.PinView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_32"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:inputType="number"
+                        android:itemBackground="@drawable/bg_otp_item"
+                        android:padding="@dimen/dp_6"
+                        android:textColor="@color/color_dark_gray"
+                        android:textSize="@dimen/sp_18"
+                        android:textStyle="bold"
+                        app:cursorColor="@color/colorPrimaryDark"
+                        app:cursorWidth="@dimen/dp_2"
+                        app:itemCount="4"
+                        app:itemHeight="@dimen/pv_pin_view_item_size"
+                        app:itemRadius="@dimen/dp_4"
+                        app:itemSpacing="@dimen/dp_16"
+                        app:itemWidth="@dimen/pv_pin_view_item_size"
+                        app:lineColor="@color/light_grey"
+                        app:lineWidth="@dimen/dp_1"
+                        app:viewType="rectangle" />
+
+                    <TextView
+                        android:id="@+id/tv_otp_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:fontFamily="@font/muli_semi_bold"
+                        android:textColor="@color/color_red"
+                        android:visibility="gone"
+                        android:text="@string/pin_is_invalid"/>
+
+                    <TextView
+                        android:id="@+id/tv_resend_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_32"
+                        android:fontFamily="@font/muli_semi_bold"
+                        android:paddingStart="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:text="@string/resend_pin"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_14" />
+
+
+                    <include layout="@layout/button_next" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

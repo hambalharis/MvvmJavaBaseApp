@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D65AC</color>
+    <color name="colorPrimaryDark">#2D4CA0</color>
+    <color name="colorAccent">#1D65AC</color>
+
+    <color name="app_theme_color">#2D4CA0</color>
+
+    <color name="bg_splash">#2D66AB</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_color">#F6F8FF</color>
+    <color name="background_grey_color">#F8F8F8</color>
+    <color name="grad_start">#2060BF</color>
+    <color name="grad_end">#3539A2</color>
+
+    <color name="light_grey">#ECEFF1</color>
+    <color name="light_green">#00D386</color>
+    <color name="light_green_with_transparancy">#3032C634</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlueStart">#2060BF</color>
+    <color name="colorBlueEnd">#3539A2</color>
+
+
+    <color name="colorTabBackground">#26FFFFFF</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+    <color name="colorTextAppointmentHeading">#212121</color>
+    <color name="colorTextAppointmentSubHeading">#474747</color>
+    <color name="colorBorder">#DEE7F9</color>
+    <color name="colorRed">#DF3535</color>
+
+    <color name="color_dark_gray">#212121</color>
+    <color name="color_light_gray">#2E2E2E</color>
+
+    <color name="transparent_grey">#90DEE7F9</color>
+    <color name="transparent_black">#90000000</color>
+    <color name="transparent_black_60">#60000000</color>
+
+    <color name="yellow_light">#FFC65B</color>
+    <color name="color_green_notification">#19D282</color>
+    <color name="colorImageBackground">#FAFAFC</color>
+
+
+    <color name="edittext_text_color">#222D2F</color>
+    <color name="text_color_blue">#215CBC</color>
+    <color name="color_red">#FF0000</color>
+    <color name="edittext_line_color">#C7CFE2</color>
+    <color name="color_tab_expand">#3A3593</color>
+
+</resources>

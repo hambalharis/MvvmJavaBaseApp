@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--To set the translucent navigation bar-->
+        <!--<item emailAddress="android:windowTranslucentNavigation">true</item>-->
+
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--for navigation item left padding-->
+    <style name="MyNavigationViewItemStyle" parent="AppTheme">
+        <item name="android:listDivider">@color/colorWhiteTransparent</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="fontFamily">@font/muli_semi_bold</item>
+        <item name="android:scaleType">fitXY</item>
+
+    </style>
+
+
+    <style name="TabAgentStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="TabAppointmentStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/muli_semi_bold</item>
+    </style>
+
+
+
+
+    <style name="textview_style_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+
+    <style name="textview_style_medium">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_6</item>
+    </style>
+
+    <style name="textview_style_black">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_6</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/muli_semi_bold</item>
+    </style>
+
+    <style name="editText_style">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:backgroundTint">@color/edittext_line_color</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:padding">@dimen/dp_6</item>
+        <item name="android:fontFamily">@font/muli_semi_bold</item>
+    </style>
+
+
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+    <style name="PinWidget" />
+
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="GreenTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextInputStyle" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>

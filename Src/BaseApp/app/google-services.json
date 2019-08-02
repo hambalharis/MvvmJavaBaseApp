@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "703435155051",
+    "firebase_url": "https://parcels360-c9486.firebaseio.com",
+    "project_id": "parcels360-c9486",
+    "storage_bucket": "parcels360-c9486.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703435155051:android:8b26b62e5926f7e7",
+        "android_client_info": {
+          "package_name": "com.app.parcels360"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703435155051-dud1u5d9kc9gr7ch32rag9g2k0be034d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5BRRl4uvaXTQ9aZ6jwB36TAY--v6GYmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703435155051-dud1u5d9kc9gr7ch32rag9g2k0be034d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

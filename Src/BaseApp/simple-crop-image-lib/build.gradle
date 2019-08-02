@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        mavenCentral()
+
+    }
+
+    /* dependencies {
+       classpath 'com.android.tools.build:gradle:3.0.0-beta2'
+     }*/
+}
+
+apply plugin: 'com.android.library'
+
+
+android {
+
+    lintOptions {
+        abortOnError false
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        staging{
+            initWith debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            manifest {
+                srcFile 'AndroidManifest.xml'
+            }
+            java {
+                srcDir 'src'
+            }
+            res {
+                srcDir 'res'
+            }
+            assets {
+                srcDir 'assets'
+            }
+            resources {
+                srcDir 'src'
+            }
+        }
+    }
+}

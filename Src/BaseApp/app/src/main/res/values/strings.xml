@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">BaseApp</string>
+    <string name="error_password_empty">Please enter password.</string>
+    <string name="error_email_empty">Please enter email address.</string>
+    <string name="error_email_invalid">Please enter a valid email address</string>
+    <string name="error_password_invalid">Please enter a valid password</string>
+    <string name="tv_cancel">Cancel</string>
+    <string name="tv_ok">OK</string>
+
+
+    <!--navigation drawer string-->
+    <string name="dashboard">Dashboard</string>
+    <string name="my_profile">My Profile</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="share_this_app">Share This App</string>
+    <string name="need_help">Need Help</string>
+    <string name="log_out">Log Out</string>
+
+
+    <!--Login String-->
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="enter_email_id">Enter email id / Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up_now">Don\'t have an account? Create one now</string>
+    <string name="log_in">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_earnfromgame">Sign Up to EarnFromGame.</string>
+    <string name="new_user">New User</string>
+    <string name="existing_user">Existing User</string>
+    <string name="enter_email">Enter Email Address</string>
+    <string name="wrong_credential">Please enter the valid input field</string>
+    <string name="split_create">Create</string>
+
+    <!--SignUp String-->
+    <string name="sign_in_now">Already have an account? Login now</string>
+    <string name="first_name">First Name</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_first_name">Enter name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="enter_phone_number">Enter Phone number</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="digit_8_password_required">Minimum 8 digit of alphanumeric password required</string>
+    <string name="min_1_alphabet">Min. 1 capital alphabet required</string>
+    <string name="min_1_small_alphabet">Min. 1 small alphabet required</string>
+    <string name="can_not_use_your_username">Can not use your username.</string>
+    <string name="min_1_numeric_character">Min. 1 numeric character required.</string>
+    <string name="valid_first_name">Please enter first name</string>
+    <string name="valid_last_name">Please enter last name</string>
+    <string name="wrong_email">The email address you entered already exists. Please Login or Recover your password</string>
+    <string name="valid_phone_number">Please enter valid phone number</string>
+    <string name="password_not_match">Passwords don’t match. Please try again.</string>
+
+    <!--Forgot Password-->
+    <string name="forgot_pass">Forgot Password ?</string>
+    <string name="forgot_pass_msg">Please enter the email address associated with your account,
+        so we can verify your account and send you the instructions to recover your password.</string>
+    <string name="forgot_sent_to_email">Please check your mailbox. We have send an PIN to reset your password</string>
+
+
+    <!--Verify Pin-->
+    <string name="enter_pin">Enter Pin</string>
+    <string name="pin_msg">Pin has been sent to your email address.  Please enter it below.</string>
+    <string name="resend_pin">Did not receive Pin? Resend Pin</string>
+    <string name="verify_email_address">Verify Email Address</string>
+    <string name="pin_is_invalid">PIN is invalid</string>
+    <string name="pin">PIN</string>
+    <string name="resend_pin_to_email">Resend PIN</string>
+
+    <!--Reset Password-->
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_now">PIN has been sent you on your email address. Please enter it below.</string>
+    <string name="new_password">New password</string>
+    <string name="retype_password">Retype password</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="password_changed_successfully">Your password has been updated successfully.</string>
+
+
+
+    <!--Confirm Signup-->
+    <string name="confirmation">Confirmation</string>
+    <string name="confirmation_msg">Thank you for completing your registration with EarnFromGame Reality
+        and Congratulation on taking the first step to your next home!You have now unlocked all
+        feature that our site has to offer. \n\n
+        For legal and compliance reasons, when you schedule your first home viewing or submit your
+        first offer, you will be asked to upload a picture of your photo ID and your initial mortgage
+        pre-approval. Don\'t have a pre-approval, no worries. You can utilize one of our finance
+        partners to obtain one in minutes.\n\n
+        You can complete these actions in advance at any time through your profile section. If any
+        have one questions, your EarnFromGame partner can easily assist.\n\n
+        Sincerely\n
+        The EarnFromGame Team</string>
+
+
+
+    <string name="alert">Alert</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="something_went_wrong">Something went wrong. Please try again.</string>
+    <string name="ok">OK</string>
+    <string name="failure">Failure</string>
+</resources>
+
