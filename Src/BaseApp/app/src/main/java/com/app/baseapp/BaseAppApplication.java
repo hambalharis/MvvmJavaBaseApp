@@ -5,9 +5,6 @@ import android.app.Application;
 import com.app.baseapp.dagger.component.ApplicationComponent;
 import com.app.baseapp.dagger.component.DaggerApplicationComponent;
 import com.app.baseapp.dagger.modules.ApplicationModule;
-import com.crashlytics.android.Crashlytics;
-
-import io.fabric.sdk.android.Fabric;
 
 public class BaseAppApplication extends Application {
 
@@ -27,12 +24,6 @@ public class BaseAppApplication extends Application {
         System.setProperty("http.keepAlive", "false");
         setUpDagger();
 
-
-//        Fabric will not be added when build type is debug.
-//        For Build type -staging & -release, it will be added.
-
-        if (!BuildConfig.BUILD_TYPE.equalsIgnoreCase("debug"))
-            Fabric.with(this, new Crashlytics());
 
     }
 

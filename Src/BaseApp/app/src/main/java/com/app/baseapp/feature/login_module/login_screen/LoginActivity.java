@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.app.baseapp.BaseAppApplication;
@@ -17,6 +18,7 @@ import com.app.baseapp.R;
 import com.app.baseapp.apputils.BaseUtils;
 import com.app.baseapp.baseui.BaseActivity;
 import com.app.baseapp.baseui.BaseViewModelFactory;
+import com.app.baseapp.databinding.ActivityLoginBinding;
 import com.app.baseapp.feature.landing_activity.HomeActivity;
 import com.app.baseapp.feature.login_module.forgot_password.ForgotPasswordActivity;
 import com.app.baseapp.feature.login_module.signup_newuser.SignUpActivity;
@@ -26,11 +28,12 @@ import javax.inject.Inject;
 
 public class LoginActivity extends BaseActivity {
 
-    private TextView mSignUp, mEmailError, mPasswordError;
+    private TextView mEmailError;
+    private TextView mPasswordError;
     private EditText mEmail, mPassword;
-    private ImageView mSignIn;
     private LoginViewModel mLoginViewModel;
     private boolean mIsPasswordShown;
+    private ActivityLoginBinding mBinding;
 
     @Inject
     public BaseViewModelFactory mViewModelFactory;
@@ -38,10 +41,12 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_login);
 
         BaseAppApplication.getApp().getDaggerAppComponent().provideIn(this);
         mLoginViewModel = ViewModelProviders.of(this, mViewModelFactory).get(LoginViewModel.class);
+        mBinding.setLifecycleOwner(this);
+        mBinding.setViewModel(mLoginViewModel);
 
         initializeView();
         addPasswordViewToggle();
@@ -58,13 +63,13 @@ public class LoginActivity extends BaseActivity {
         mPassword = findViewById(R.id.et_password);
         mEmailError = findViewById(R.id.tv_email_error);
         mPasswordError = findViewById(R.id.tv_password_error);
-        mSignIn = findViewById(R.id.img_next);
+       /* ImageView mSignIn = findViewById(R.id.img_next);
         mSignIn.setOnClickListener(v -> {
             LoginModel model = new LoginModel();
             model.emailAddress = mEmail.getText().toString();
             model.password = mPassword.getText().toString();
             mLoginViewModel.onClick(model);
-        });
+        });*/
 
         findViewById(R.id.tv_forgot_password).setOnClickListener(v -> switchActivity(ForgotPasswordActivity.class));
 
@@ -84,7 +89,7 @@ public class LoginActivity extends BaseActivity {
      * Set sign up text and click function
      */
     private void setClickSpan() {
-        mSignUp = findViewById(R.id.tv_sign_up);
+        TextView mSignUp = findViewById(R.id.tv_sign_up);
         View.OnClickListener signUpListner = v -> switchActivity(SignUpActivity.class);
         onSpannableClick(getString(R.string.sign_up_now), mSignUp, signUpListner);
     }
